@@ -1,0 +1,980 @@
+/* Copyright (c) 2025 Jema Technology. */
+/* Distributed under the license specified in the root directory of this project. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   AnkhWave - Modern DAW Styles 2025
+   ============================================ */
+
+/* ============================================
+   BASE LAYER - Root Variables & Resets
+   ============================================ */
+@layer base {
+  :root {
+    /* AnkhWave color scheme - Modern 2025 design */
+    --daw-bg-primary: #0d0d12;
+    --daw-bg-secondary: #14141b;
+    --daw-bg-tertiary: #1a1a24;
+    --daw-bg-surface: #22222e;
+    --daw-bg-elevated: #2a2a38;
+    --daw-bg-hover: #32324a;
+    --daw-bg-active: #3a3a52;
+    
+    --daw-border: #2a2a3a;
+    --daw-border-light: #3a3a4a;
+    --daw-border-dark: #1a1a2a;
+    --daw-border-focus: #8286ef;
+    
+    --daw-text-primary: #f8f8fc;
+    --daw-text-secondary: #a8a8b8;
+    --daw-text-muted: #68687a;
+    --daw-text-disabled: #48485a;
+    
+    --daw-accent: #8286ef;
+    --daw-accent-hover: #9a9ef5;
+    --daw-accent-dim: #6a6ec7;
+    --daw-accent-glow: rgba(130, 134, 239, 0.4);
+    
+    --daw-success: #6ee7b7;
+    --daw-warning: #fcd34d;
+    --daw-error: #f87171;
+    
+    /* VU Meter colors - Modern gradient */
+    --meter-green: #6ee7b7;
+    --meter-yellow: #fcd34d;
+    --meter-orange: #fb923c;
+    --meter-red: #f87171;
+    --meter-peak: #ff4444;
+    
+    /* Piano colors - Refined */
+    --piano-white: #f0f0f8;
+    --piano-white-hover: #e4e4f0;
+    --piano-white-active: #d0d0e0;
+    --piano-black: #14141b;
+    --piano-black-hover: #22222e;
+    --piano-black-active: #2a2a38;
+    
+    /* Sizing */
+    --header-height: 48px;
+    --sidebar-width: 240px;
+    --sidebar-collapsed-width: 48px;
+    --statusbar-height: 24px;
+    --track-header-width: 200px;
+    --mixer-channel-width: 80px;
+    --piano-key-width: 40px;
+    --piano-key-height-white: 120px;
+    --piano-key-height-black: 80px;
+    
+    /* Grid */
+    --grid-beat-width: 40px;
+    --grid-bar-width: 160px;
+    --grid-row-height: 20px;
+    
+    /* Transitions */
+    --transition-fast: 75ms;
+    --transition-normal: 150ms;
+    --transition-slow: 300ms;
+  }
+
+  /* Light Theme Override */
+  :root[data-theme="light"] {
+    --daw-bg-primary: #f3f4f6;
+    --daw-bg-secondary: #e5e7eb;
+    --daw-bg-tertiary: #d1d5db;
+    --daw-bg-surface: #ffffff;
+    --daw-bg-elevated: #f9fafb;
+    --daw-bg-hover: #e5e7eb;
+    --daw-bg-active: #d1d5db;
+    
+    --daw-border: #d1d5db;
+    --daw-border-light: #e5e7eb;
+    --daw-border-dark: #9ca3af;
+    --daw-border-focus: #6366f1;
+    
+    --daw-text-primary: #111827;
+    --daw-text-secondary: #4b5563;
+    --daw-text-muted: #6b7280;
+    --daw-text-disabled: #9ca3af;
+    
+    --daw-accent: #6366f1;
+    --daw-accent-hover: #4f46e5;
+    --daw-accent-dim: #818cf8;
+    --daw-accent-glow: rgba(99, 102, 241, 0.4);
+    
+    --daw-success: #10b981;
+    --daw-warning: #f59e0b;
+    --daw-error: #ef4444;
+  }
+
+  /* Dark theme is default */
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--daw-bg-primary);
+    background-image: none;
+    color: var(--daw-text-primary);
+    overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+
+  #root {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Focus visible for accessibility */
+  *:focus-visible {
+    outline: 2px solid var(--daw-accent);
+    outline-offset: 2px;
+  }
+
+  /* Remove default focus for mouse users */
+  *:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Custom scrollbar - Thin variant */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--daw-bg-primary);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--daw-text-muted);
+    border-radius: 4px;
+    border: 2px solid var(--daw-bg-primary);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--daw-text-secondary);
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: var(--daw-accent-dim);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: var(--daw-bg-primary);
+  }
+
+  /* Firefox scrollbar */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--daw-text-muted) var(--daw-bg-primary);
+  }
+
+  /* Selection */
+  ::selection {
+    background: var(--daw-accent);
+    color: white;
+  }
+
+  /* Prevent text selection during drag operations */
+  .dragging,
+  .dragging * {
+    user-select: none !important;
+    cursor: grabbing !important;
+  }
+
+  /* Input reset */
+  input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+  }
+
+  /* Remove number input spinners */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  /* Range input reset */
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+}
+
+/* ============================================
+   COMPONENTS LAYER - Reusable UI Components
+   ============================================ */
+@layer components {
+  /* ---- Buttons ---- */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded font-medium;
+    @apply transition-all duration-150 ease-out;
+    @apply focus-visible:ring-2 focus-visible:ring-daw-accent focus-visible:ring-offset-2 focus-visible:ring-offset-daw-bg-primary;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none;
+  }
+
+  .btn-sm {
+    @apply px-2 py-1 text-xs gap-1;
+  }
+
+  .btn-lg {
+    @apply px-6 py-3 text-base gap-3;
+  }
+
+  .btn-primary {
+    @apply bg-daw-accent text-white;
+    @apply hover:bg-daw-accent-hover active:bg-daw-accent-dim;
+  }
+
+  .btn-secondary {
+    @apply bg-daw-bg-tertiary text-daw-text-secondary border border-daw-border;
+    @apply hover:bg-daw-bg-hover hover:text-daw-text-primary hover:border-daw-border-light;
+    @apply active:bg-daw-bg-active;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-daw-text-secondary;
+    @apply hover:bg-daw-bg-tertiary hover:text-daw-text-primary;
+    @apply active:bg-daw-bg-hover;
+  }
+
+  .btn-danger {
+    @apply bg-daw-accent-error text-white;
+    @apply hover:bg-red-500 active:bg-red-700;
+  }
+
+  .btn-icon {
+    @apply p-2 aspect-square;
+  }
+
+  /* ---- Inputs ---- */
+  .input {
+    @apply bg-daw-bg-primary border border-daw-border rounded px-3 py-2 text-daw-text-primary;
+    @apply placeholder:text-daw-text-muted;
+    @apply focus:outline-none focus:border-daw-accent focus:ring-1 focus:ring-daw-accent;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply transition-colors duration-150;
+  }
+
+  .input-sm {
+    @apply px-2 py-1 text-xs;
+  }
+
+  .input-lg {
+    @apply px-4 py-3 text-base;
+  }
+
+  /* ---- Select ---- */
+  .select {
+    @apply input appearance-none cursor-pointer pr-8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23707070'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+  }
+
+  /* ---- Panels ---- */
+  .panel {
+    @apply bg-daw-bg-secondary border border-daw-border rounded-lg overflow-hidden;
+  }
+
+  .panel-header {
+    @apply px-4 py-2 border-b border-daw-border font-medium text-daw-text-primary;
+    @apply flex items-center justify-between gap-2;
+    @apply bg-daw-bg-tertiary;
+  }
+
+  .panel-content {
+    @apply p-4;
+  }
+
+  .panel-footer {
+    @apply px-4 py-2 border-t border-daw-border;
+    @apply flex items-center justify-end gap-2;
+    @apply bg-daw-bg-tertiary;
+  }
+
+  /* ---- Cards ---- */
+  .card {
+    @apply bg-daw-bg-surface rounded-lg p-4 border border-daw-border;
+    @apply transition-all duration-150;
+  }
+
+  .card-interactive {
+    @apply card cursor-pointer;
+    @apply hover:bg-daw-bg-hover hover:border-daw-border-light;
+    @apply active:bg-daw-bg-active;
+  }
+
+  /* ---- Tracks ---- */
+  .track {
+    @apply flex items-stretch bg-daw-bg-secondary border-b border-daw-border;
+    min-height: 80px;
+  }
+
+  .track-header {
+    @apply flex-shrink-0 p-2 border-r border-daw-border bg-daw-bg-tertiary;
+    width: var(--track-header-width);
+  }
+
+  .track-content {
+    @apply flex-1 relative overflow-hidden;
+  }
+
+  .track-selected {
+    @apply bg-daw-bg-surface;
+  }
+
+  .track-selected .track-header {
+    @apply bg-daw-bg-hover;
+  }
+
+  /* ---- Clips ---- */
+  .clip {
+    @apply absolute rounded border cursor-pointer;
+    @apply transition-all duration-75;
+  }
+
+  .clip:hover {
+    @apply brightness-110;
+  }
+
+  .clip-selected {
+    @apply ring-2 ring-white/50;
+  }
+
+  .clip-audio {
+    @apply bg-track-blue/40 border-track-blue/60;
+  }
+
+  .clip-midi {
+    @apply bg-track-green/40 border-track-green/60;
+  }
+
+  .clip-automation {
+    @apply bg-track-purple/40 border-track-purple/60;
+  }
+
+  /* ---- Notes (Piano Roll) ---- */
+  .note {
+    @apply absolute rounded-sm cursor-pointer;
+    @apply transition-all duration-50;
+  }
+
+  .note:hover {
+    @apply brightness-110;
+  }
+
+  .note-selected {
+    @apply ring-2 ring-white/60;
+  }
+
+  .note-velocity-low {
+    @apply opacity-50;
+  }
+
+  .note-velocity-high {
+    @apply opacity-100;
+  }
+
+  /* ---- Mixer Channel ---- */
+  .mixer-channel {
+    @apply flex flex-col bg-daw-bg-secondary rounded-lg p-2 gap-2;
+    width: var(--mixer-channel-width);
+    min-width: var(--mixer-channel-width);
+  }
+
+  .mixer-channel-master {
+    @apply bg-daw-bg-tertiary border-2 border-daw-accent/30;
+  }
+
+  .mixer-channel-selected {
+    @apply ring-2 ring-daw-accent;
+  }
+
+  /* ---- Knob ---- */
+  .knob-container {
+    @apply flex flex-col items-center gap-1;
+  }
+
+  .knob {
+    @apply cursor-pointer select-none;
+    touch-action: none;
+  }
+
+  .knob-label {
+    @apply text-xxs text-daw-text-muted text-center truncate;
+    max-width: 100%;
+  }
+
+  .knob-value {
+    @apply text-xxs text-daw-text-secondary font-mono text-center;
+  }
+
+  /* ---- Fader ---- */
+  .fader-container {
+    @apply flex flex-col items-center gap-1;
+  }
+
+  .fader-track {
+    @apply relative bg-daw-bg-primary rounded-full;
+  }
+
+  .fader-track-vertical {
+    @apply w-2 h-32;
+  }
+
+  .fader-track-horizontal {
+    @apply h-2 w-32;
+  }
+
+  .fader-thumb {
+    @apply absolute bg-daw-text-secondary rounded cursor-pointer;
+    @apply hover:bg-daw-text-primary;
+    @apply transition-colors duration-75;
+  }
+
+  .fader-thumb-vertical {
+    @apply w-4 h-6 -left-1;
+  }
+
+  .fader-thumb-horizontal {
+    @apply h-4 w-6 -top-1;
+  }
+
+  /* ---- VU Meter ---- */
+  .vu-meter {
+    @apply relative bg-daw-bg-primary rounded overflow-hidden;
+  }
+
+  .vu-meter-vertical {
+    @apply w-3 h-full;
+  }
+
+  .vu-meter-horizontal {
+    @apply h-3 w-full;
+  }
+
+  .vu-meter-fill {
+    @apply absolute bottom-0 left-0 right-0;
+    background: linear-gradient(to top,
+      var(--meter-green) 0%,
+      var(--meter-green) 60%,
+      var(--meter-yellow) 70%,
+      var(--meter-orange) 85%,
+      var(--meter-red) 100%
+    );
+  }
+
+  .vu-meter-peak {
+    @apply absolute left-0 right-0 h-0.5 bg-meter-peak;
+  }
+
+  .vu-meter-clip {
+    @apply absolute top-0 left-0 right-0 h-1 bg-meter-peak;
+  }
+
+  /* ---- Transport Controls ---- */
+  .transport-btn {
+    @apply w-10 h-10 flex items-center justify-center rounded-full;
+    @apply bg-daw-bg-tertiary text-daw-text-secondary;
+    @apply hover:bg-daw-bg-hover hover:text-daw-text-primary;
+    @apply active:bg-daw-bg-active;
+    @apply transition-all duration-150;
+  }
+
+  .transport-btn-active {
+    @apply bg-daw-accent text-white;
+    @apply hover:bg-daw-accent-hover;
+  }
+
+  .transport-btn-record {
+    @apply hover:bg-red-600/20 hover:text-red-500;
+  }
+
+  .transport-btn-record-active {
+    @apply bg-red-600 text-white animate-pulse;
+    @apply hover:bg-red-500;
+  }
+
+  /* ---- Timeline ---- */
+  .timeline {
+    @apply h-8 bg-daw-bg-tertiary border-b border-daw-border relative;
+  }
+
+  .timeline-marker {
+    @apply absolute top-0 bottom-0 w-px bg-daw-accent pointer-events-none;
+    z-index: 10;
+  }
+
+  .timeline-loop-region {
+    @apply absolute top-0 bottom-0 bg-daw-accent/20 border-x-2 border-daw-accent;
+  }
+
+  /* ---- Grid ---- */
+  .grid-line {
+    @apply absolute top-0 bottom-0 w-px pointer-events-none;
+  }
+
+  .grid-line-sub {
+    @apply bg-daw-border/20;
+  }
+
+  .grid-line-beat {
+    @apply bg-daw-border/40;
+  }
+
+  .grid-line-bar {
+    @apply bg-daw-border/70;
+  }
+
+  /* ---- Playhead ---- */
+  .playhead {
+    @apply absolute top-0 bottom-0 w-px bg-white pointer-events-none;
+    z-index: 20;
+  }
+
+  .playhead::before {
+    content: '';
+    @apply absolute -top-1 left-1/2 -translate-x-1/2;
+    @apply w-0 h-0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid white;
+  }
+
+  /* ---- Tooltip ---- */
+  .tooltip {
+    @apply absolute z-tooltip px-2 py-1 text-xs bg-daw-bg-elevated text-daw-text-primary;
+    @apply rounded shadow-dropdown border border-daw-border;
+    @apply pointer-events-none animate-fade-in;
+  }
+
+  /* ---- Context Menu ---- */
+  .context-menu {
+    @apply absolute z-dropdown min-w-40 py-1 bg-daw-bg-secondary rounded-lg;
+    @apply shadow-dropdown border border-daw-border;
+    @apply animate-scale-in origin-top-left;
+  }
+
+  .context-menu-item {
+    @apply px-4 py-2 text-sm text-daw-text-secondary cursor-pointer;
+    @apply flex items-center gap-3;
+    @apply hover:bg-daw-bg-hover hover:text-daw-text-primary;
+    @apply transition-colors duration-75;
+  }
+
+  .context-menu-item-danger {
+    @apply text-daw-accent-error;
+    @apply hover:bg-red-600/20;
+  }
+
+  .context-menu-item-disabled {
+    @apply opacity-50 cursor-not-allowed pointer-events-none;
+  }
+
+  .context-menu-separator {
+    @apply my-1 border-t border-daw-border;
+  }
+
+  .context-menu-shortcut {
+    @apply ml-auto text-daw-text-muted text-xs font-mono;
+  }
+
+  /* ---- Dropdown Menu ---- */
+  .dropdown {
+    @apply relative inline-block;
+  }
+
+  .dropdown-menu {
+    @apply absolute z-dropdown min-w-40 py-1 bg-daw-bg-secondary rounded-lg;
+    @apply shadow-dropdown border border-daw-border;
+    @apply animate-slide-in;
+  }
+
+  .dropdown-item {
+    @apply context-menu-item;
+  }
+
+  /* ---- Modal ---- */
+  .modal-overlay {
+    @apply fixed inset-0 bg-black/60 backdrop-blur-xs;
+    @apply flex items-center justify-center z-modal;
+    @apply animate-fade-in;
+  }
+
+  .modal {
+    @apply bg-daw-bg-secondary rounded-lg shadow-modal border border-daw-border;
+    @apply max-w-lg w-full max-h-[90vh] overflow-auto;
+    @apply animate-scale-in;
+  }
+
+  .modal-header {
+    @apply px-6 py-4 border-b border-daw-border;
+    @apply flex items-center justify-between;
+    @apply font-medium text-lg;
+  }
+
+  .modal-content {
+    @apply px-6 py-4;
+  }
+
+  .modal-footer {
+    @apply px-6 py-4 border-t border-daw-border;
+    @apply flex items-center justify-end gap-2;
+  }
+
+  /* ---- Tabs ---- */
+  .tabs {
+    @apply flex border-b border-daw-border;
+  }
+
+  .tab {
+    @apply px-4 py-2 text-sm text-daw-text-secondary cursor-pointer;
+    @apply border-b-2 border-transparent -mb-px;
+    @apply hover:text-daw-text-primary hover:bg-daw-bg-hover;
+    @apply transition-all duration-150;
+  }
+
+  .tab-active {
+    @apply text-daw-text-primary border-daw-accent;
+  }
+
+  /* ---- Browser Items ---- */
+  .browser-item {
+    @apply flex items-center gap-2 px-3 py-1.5 text-sm text-daw-text-secondary;
+    @apply cursor-pointer rounded;
+    @apply hover:bg-daw-bg-hover hover:text-daw-text-primary;
+    @apply transition-colors duration-75;
+  }
+
+  .browser-item-selected {
+    @apply bg-daw-accent/20 text-daw-text-primary;
+  }
+
+  .browser-item-dragging {
+    @apply opacity-50;
+  }
+
+  /* ---- Piano Keyboard ---- */
+  .piano-key {
+    @apply relative cursor-pointer select-none;
+    @apply transition-colors duration-50;
+  }
+
+  .piano-key-white {
+    @apply bg-piano-white border border-daw-border;
+    @apply hover:bg-piano-white-hover;
+    @apply active:bg-piano-white-active;
+  }
+
+  .piano-key-black {
+    @apply bg-piano-black border border-black;
+    @apply hover:bg-piano-black-hover;
+    @apply active:bg-piano-black-active;
+    z-index: 1;
+  }
+
+  .piano-key-active {
+    @apply bg-daw-accent !important;
+  }
+
+  /* ---- Waveform ---- */
+  .waveform {
+    @apply relative bg-daw-bg-primary rounded overflow-hidden;
+  }
+
+  .waveform-canvas {
+    @apply w-full h-full;
+  }
+
+  .waveform-selection {
+    @apply absolute top-0 bottom-0 bg-daw-accent/30 border-x border-daw-accent;
+  }
+
+  /* ---- Automation ---- */
+  .automation-point {
+    @apply absolute w-2 h-2 bg-daw-accent rounded-full cursor-pointer;
+    @apply hover:scale-150 hover:bg-daw-accent-hover;
+    @apply transition-transform duration-75;
+    transform: translate(-50%, -50%);
+  }
+
+  .automation-point-selected {
+    @apply ring-2 ring-white;
+  }
+
+  .automation-line {
+    @apply stroke-daw-accent stroke-2;
+    fill: none;
+  }
+
+  /* ---- Resize Handles ---- */
+  .resize-handle {
+    @apply absolute bg-transparent;
+    @apply hover:bg-daw-accent/30;
+    @apply transition-colors duration-75;
+  }
+
+  .resize-handle-horizontal {
+    @apply w-1 h-full cursor-ew-resize;
+  }
+
+  .resize-handle-vertical {
+    @apply h-1 w-full cursor-ns-resize;
+  }
+
+  .resize-handle-corner {
+    @apply w-3 h-3 cursor-nwse-resize;
+  }
+
+  /* ---- Splitter ---- */
+  .splitter {
+    @apply bg-daw-border flex-shrink-0;
+    @apply hover:bg-daw-accent-glow;
+    @apply transition-colors duration-150;
+  }
+
+  .splitter-horizontal {
+    @apply w-1 cursor-ew-resize;
+  }
+
+  .splitter-vertical {
+    @apply h-1 cursor-ns-resize;
+  }
+
+  .splitter-active {
+    @apply bg-daw-accent;
+  }
+
+  /* ---- Loading States ---- */
+  .skeleton {
+    @apply bg-daw-bg-tertiary rounded animate-pulse;
+  }
+
+  .spinner {
+    @apply w-5 h-5 border-2 border-daw-text-muted border-t-daw-accent rounded-full;
+    @apply animate-spin;
+  }
+
+  /* ---- Badges ---- */
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-medium rounded-full;
+  }
+
+  .badge-primary {
+    @apply bg-daw-accent/20 text-daw-accent;
+  }
+
+  .badge-success {
+    @apply bg-daw-accent-success/20 text-daw-accent-success;
+  }
+
+  .badge-warning {
+    @apply bg-daw-accent-warning/20 text-daw-accent-warning;
+  }
+
+  .badge-error {
+    @apply bg-daw-accent-error/20 text-daw-accent-error;
+  }
+
+  /* ---- Keyboard Shortcut Display ---- */
+  .kbd {
+    @apply inline-flex items-center justify-center px-1.5 py-0.5;
+    @apply text-xxs font-mono text-daw-text-muted;
+    @apply bg-daw-bg-primary border border-daw-border rounded;
+    min-width: 1.5rem;
+  }
+}
+
+/* ============================================
+   UTILITIES LAYER - Helper Classes
+   ============================================ */
+@layer utilities {
+  /* ---- Text Utilities ---- */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* ---- Interaction Utilities ---- */
+  .drag-handle {
+    cursor: grab;
+  }
+
+  .drag-handle:active {
+    cursor: grabbing;
+  }
+
+  .no-select {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .no-drag {
+    -webkit-user-drag: none;
+    user-drag: none;
+  }
+
+  .no-touch {
+    touch-action: none;
+  }
+
+  /* ---- Performance Utilities ---- */
+  .gpu {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  .gpu-opacity {
+    will-change: opacity;
+  }
+
+  .contain-strict {
+    contain: strict;
+  }
+
+  .contain-content {
+    contain: content;
+  }
+
+  .contain-paint {
+    contain: paint;
+  }
+
+  /* ---- Scrollbar Utilities ---- */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ---- Aspect Ratio Utilities ---- */
+  .aspect-knob {
+    aspect-ratio: 1 / 1;
+  }
+
+  .aspect-waveform {
+    aspect-ratio: 4 / 1;
+  }
+
+  /* ---- Z-Index Utilities ---- */
+  .z-dropdown {
+    z-index: 1000;
+  }
+
+  .z-modal {
+    z-index: 1100;
+  }
+
+  .z-tooltip {
+    z-index: 1200;
+  }
+
+  .z-notification {
+    z-index: 1300;
+  }
+
+  /* ---- Grid Utilities ---- */
+  .grid-mixer {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+
+  .grid-pattern-16 {
+    grid-template-columns: repeat(16, 1fr);
+  }
+
+  .grid-pattern-32 {
+    grid-template-columns: repeat(32, 1fr);
+  }
+
+  /* ---- Inset Utilities ---- */
+  .inset-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* ---- Safe Area Utilities ---- */
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-left {
+    padding-left: env(safe-area-inset-left);
+  }
+
+  .safe-right {
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<ankhwavestudio-project version="1.0" type="song" creator="ANKHWAVESTUDIO Web" creatorversion="1.0.0">
+  <head
+    bpm="120"
+    timesig_numerator="4"
+    timesig_denominator="4"
+    mastervol="100"
+    masterpitch="0"
+  />
+  <song>
+    <trackcontainer>
+      <!-- Lead Synth Track -->
+      <track type="0" name="Lead Synth" muted="0" solo="0" color="4287090426">
+        <instrumenttrack
+          vol="80"
+          pan="0"
+          pitch="0"
+          pitchrange="1"
+          fxch="1"
+          basenote="57"
+          usemasterpitch="1"
+        >
+          <instrument name="tripleoscillator">
+            <tripleoscillator
+              osc1_vol="33"
+              osc1_pan="0"
+              osc1_coarse="0"
+              osc1_finel="0"
+              osc1_finer="0"
+              osc1_phoffset="0"
+              osc1_stphdetun="0"
+              osc1_wave="2"
+              osc2_vol="33"
+              osc2_pan="0"
+              osc2_coarse="0"
+              osc2_finel="0"
+              osc2_finer="0"
+              osc2_phoffset="0"
+              osc2_stphdetun="0"
+              osc2_wave="0"
+              osc3_vol="33"
+              osc3_pan="0"
+              osc3_coarse="12"
+              osc3_finel="0"
+              osc3_finer="0"
+              osc3_phoffset="0"
+              osc3_stphdetun="0"
+              osc3_wave="3"
+              osc2_mod="0"
+              osc3_mod="0"
+            />
+          </instrument>
+          <eldata>
+            <elvol pdel="0" att="0.05" hold="0.5" dec="0.3" sustain="0.7" rel="0.2" amt="0" />
+            <elcut pdel="0" att="0" hold="0.5" dec="0.5" sustain="0.5" rel="0.1" amt="0" />
+            <elres pdel="0" att="0" hold="0.5" dec="0.5" sustain="0.5" rel="0.1" amt="0" />
+          </eldata>
+        </instrumenttrack>
+        <!-- Pattern 1: Simple melody -->
+        <pattern pos="0" len="768" name="Melody A">
+          <note pos="0" len="96" key="60" vol="100" pan="0" />
+          <note pos="96" len="96" key="64" vol="90" pan="0" />
+          <note pos="192" len="96" key="67" vol="95" pan="0" />
+          <note pos="288" len="96" key="72" vol="100" pan="0" />
+          <note pos="384" len="96" key="67" vol="90" pan="0" />
+          <note pos="480" len="96" key="64" vol="85" pan="0" />
+          <note pos="576" len="192" key="60" vol="100" pan="0" />
+        </pattern>
+        <!-- Pattern 2: Variation -->
+        <pattern pos="768" len="768" name="Melody B">
+          <note pos="0" len="96" key="62" vol="100" pan="0" />
+          <note pos="96" len="96" key="65" vol="90" pan="0" />
+          <note pos="192" len="96" key="69" vol="95" pan="0" />
+          <note pos="288" len="96" key="74" vol="100" pan="0" />
+          <note pos="384" len="96" key="69" vol="90" pan="0" />
+          <note pos="480" len="96" key="65" vol="85" pan="0" />
+          <note pos="576" len="192" key="62" vol="100" pan="0" />
+        </pattern>
+      </track>
+
+      <!-- Bass Track -->
+      <track type="0" name="Bass" muted="0" solo="0" color="4278233600">
+        <instrumenttrack
+          vol="90"
+          pan="0"
+          pitch="-12"
+          pitchrange="1"
+          fxch="2"
+          basenote="57"
+          usemasterpitch="1"
+        >
+          <instrument name="tripleoscillator">
+            <tripleoscillator
+              osc1_vol="50"
+              osc1_pan="0"
+              osc1_coarse="0"
+              osc1_finel="0"
+              osc1_finer="0"
+              osc1_phoffset="0"
+              osc1_stphdetun="0"
+              osc1_wave="2"
+              osc2_vol="50"
+              osc2_pan="0"
+              osc2_coarse="-12"
+              osc2_finel="0"
+              osc2_finer="0"
+              osc2_phoffset="0"
+              osc2_stphdetun="0"
+              osc2_wave="3"
+              osc3_vol="0"
+              osc3_pan="0"
+              osc3_coarse="0"
+              osc3_finel="0"
+              osc3_finer="0"
+              osc3_phoffset="0"
+              osc3_stphdetun="0"
+              osc3_wave="0"
+              osc2_mod="0"
+              osc3_mod="0"
+            />
+          </instrument>
+          <eldata>
+            <elvol pdel="0" att="0.01" hold="0.5" dec="0.2" sustain="0.8" rel="0.1" amt="0" />
+            <elcut pdel="0" att="0" hold="0.5" dec="0.5" sustain="0.5" rel="0.1" amt="0" />
+            <elres pdel="0" att="0" hold="0.5" dec="0.5" sustain="0.5" rel="0.1" amt="0" />
+          </eldata>
+        </instrumenttrack>
+        <!-- Bass pattern -->
+        <pattern pos="0" len="768" name="Bass Line">
+          <note pos="0" len="192" key="48" vol="100" pan="0" />
+          <note pos="192" len="192" key="48" vol="90" pan="0" />
+          <note pos="384" len="192" key="52" vol="100" pan="0" />
+          <note pos="576" len="192" key="55" vol="95" pan="0" />
+        </pattern>
+        <pattern pos="768" len="768" name="Bass Line 2">
+          <note pos="0" len="192" key="50" vol="100" pan="0" />
+          <note pos="192" len="192" key="50" vol="90" pan="0" />
+          <note pos="384" len="192" key="53" vol="100" pan="0" />
+          <note pos="576" len="192" key="57" vol="95" pan="0" />
+        </pattern>
+      </track>
+
+      <!-- Kick Drum Track -->
+      <track type="0" name="Kick" muted="0" solo="0" color="4294901760">
+        <instrumenttrack
+          vol="100"
+          pan="0"
+          pitch="0"
+          pitchrange="1"
+          fxch="3"
+          basenote="57"
+          usemasterpitch="0"
+        >
+          <instrument name="kicker">
+            <kicker
+              startfreq="400"
+              endfreq="40"
+              decay="0.2"
+              dist="0.8"
+              distend="0.5"
+              gain="1"
+              env="0.5"
+              noise="0.1"
+              click="0.3"
+              slope="0.5"
+              startnotefreq="0"
+              endnotefreq="0"
+            />
+          </instrument>
+          <eldata>
+            <elvol pdel="0" att="0" hold="0.5" dec="0.5" sustain="0.5" rel="0.1" amt="0" />
+            <elcut pdel="0" att="0" hold="0.5" dec="0.5" sustain="0.5" rel="0.1" amt="0" />
+            <elres pdel="0" att="0" hold="0.5" dec="0.5" sustain="0.5" rel="0.1" amt="0" />
+          </eldata>
+        </instrumenttrack>
+        <!-- Kick pattern - 4 on the floor -->
+        <pattern pos="0" len="768" name="Kick Pattern">
+          <note pos="0" len="48" key="60" vol="100" pan="0" />
+          <note pos="192" len="48" key="60" vol="100" pan="0" />
+          <note pos="384" len="48" key="60" vol="100" pan="0" />
+          <note pos="576" len="48" key="60" vol="100" pan="0" />
+        </pattern>
+        <pattern pos="768" len="768" name="Kick Pattern">
+          <note pos="0" len="48" key="60" vol="100" pan="0" />
+          <note pos="192" len="48" key="60" vol="100" pan="0" />
+          <note pos="384" len="48" key="60" vol="100" pan="0" />
+          <note pos="576" len="48" key="60" vol="100" pan="0" />
+        </pattern>
+      </track>
+
+      <!-- Pad Track -->
+      <track type="0" name="Pad" muted="0" solo="0" color="4286578816">
+        <instrumenttrack
+          vol="60"
+          pan="0"
+          pitch="0"
+          pitchrange="1"
+          fxch="4"
+          basenote="57"
+          usemasterpitch="1"
+        >
+          <instrument name="tripleoscillator">
+            <tripleoscillator
+              osc1_vol="33"
+              osc1_pan="-30"
+              osc1_coarse="0"
+              osc1_finel="0"
+              osc1_finer="5"
+              osc1_phoffset="0"
+              osc1_stphdetun="10"
+              osc1_wave="0"
+              osc2_vol="33"
+              osc2_pan="30"
+              osc2_coarse="0"
+              osc2_finel="0"
+              osc2_finer="-5"
+              osc2_phoffset="0"
+              osc2_stphdetun="10"
+              osc2_wave="0"
+              osc3_vol="33"
+              osc3_pan="0"
+              osc3_coarse="12"
+              osc3_finel="0"
+              osc3_finer="0"
+              osc3_phoffset="0"
+              osc3_stphdetun="0"
+              osc3_wave="0"
+              osc2_mod="0"
+              osc3_mod="0"
+            />
+          </instrument>
+          <eldata>
+            <elvol pdel="0" att="0.5" hold="0.5" dec="0.5" sustain="0.8" rel="1" amt="0" />
+            <elcut pdel="0" att="0" hold="0.5" dec="0.5" sustain="0.5" rel="0.1" amt="0" />
+            <elres pdel="0" att="0" hold="0.5" dec="0.5" sustain="0.5" rel="0.1" amt="0" />
+          </eldata>
+        </instrumenttrack>
+        <!-- Pad chords -->
+        <pattern pos="0" len="1536" name="Pad Chords">
+          <note pos="0" len="768" key="60" vol="80" pan="0" />
+          <note pos="0" len="768" key="64" vol="80" pan="0" />
+          <note pos="0" len="768" key="67" vol="80" pan="0" />
+          <note pos="768" len="768" key="62" vol="80" pan="0" />
+          <note pos="768" len="768" key="65" vol="80" pan="0" />
+          <note pos="768" len="768" key="69" vol="80" pan="0" />
+        </pattern>
+      </track>
+
+      <!-- Automation Track for Lead Volume -->
+      <track type="5" name="Lead Volume Automation" muted="0" solo="0">
+        <automationpattern pos="0" len="1536" name="Volume Swell" prog="0" tens="0">
+          <time pos="0" value="0.5" />
+          <time pos="384" value="0.8" />
+          <time pos="768" value="1.0" />
+          <time pos="1152" value="0.7" />
+          <time pos="1536" value="0.5" />
+        </automationpattern>
+      </track>
+    </trackcontainer>
+  </song>
+  <fxmixer>
+    <fxchannel num="0" name="Master" volume="1" muted="0">
+      <fxchain>
+        <effect name="reverbsc" on="1" wet="0.3">
+          <reverbsc roomsize="0.5" damping="0.5" />
+        </effect>
+      </fxchain>
+    </fxchannel>
+    <fxchannel num="1" name="Lead" volume="0.8" muted="0">
+      <send channel="0" amount="1" />
+    </fxchannel>
+    <fxchannel num="2" name="Bass" volume="0.9" muted="0">
+      <send channel="0" amount="1" />
+    </fxchannel>
+    <fxchannel num="3" name="Drums" volume="1" muted="0">
+      <send channel="0" amount="1" />
+    </fxchannel>
+    <fxchannel num="4" name="Pad" volume="0.6" muted="0">
+      <fxchain>
+        <effect name="delay" on="1" wet="0.2">
+          <delay time="0.25" feedback="0.3" />
+        </effect>
+      </fxchain>
+      <send channel="0" amount="1" />
+    </fxchannel>
+  </fxmixer>
+</ankhwavestudio-project>

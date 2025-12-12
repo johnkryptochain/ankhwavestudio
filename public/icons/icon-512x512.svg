@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background rounded rectangle -->
+  <rect x="51" y="51" width="410" height="410" rx="90" fill="url(#bgGrad)"/>
+  
+  <!-- Logo Content -->
+  <g transform="translate(256, 256)">
+      <!-- Circle (Head) -->
+      <circle cx="0" cy="-61.49999999999999" r="49.199999999999996" fill="none" stroke="white" stroke-width="24.599999999999998" />
+      
+      <!-- Wave (Body) -->
+      <path d="M -102.49999999999999 61.49999999999999 Q -49.199999999999996 20.5, 0 61.49999999999999 T 102.49999999999999 61.49999999999999" 
+            stroke="white" stroke-width="24.599999999999998" fill="none" stroke-linecap="round" />
+  </g>
+</svg>

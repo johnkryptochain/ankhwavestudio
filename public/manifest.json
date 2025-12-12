@@ -1,0 +1,194 @@
+{
+  "name": "AnkhWaveStudio Web - Station de Travail Audio Numérique",
+  "short_name": "AnkhWaveStudio Web",
+  "description": "Une station de travail audio numérique puissante, gratuite et open-source pour le web. Créez de la musique avec des synthétiseurs, des samples et des effets - directement dans votre navigateur.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "id": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "any",
+  "theme_color": "#4a90d9",
+  "background_color": "#1a1a2e",
+  "dir": "ltr",
+  "lang": "fr",
+  "prefer_related_applications": false,
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "music",
+    "productivity",
+    "utilities",
+    "entertainment",
+    "education"
+  ],
+  "iarc_rating_id": "",
+  "file_handlers": [
+    {
+      "action": "/open",
+      "accept": {
+        "application/x-AnkhWaveStudio-project": [".mmp", ".mmpz"],
+        "application/x-AnkhWaveStudio-web-project": [".AnkhWaveStudiow"]
+      },
+      "launch_type": "single-client"
+    },
+    {
+      "action": "/import",
+      "accept": {
+        "audio/midi": [".mid", ".midi"],
+        "audio/wav": [".wav"],
+        "audio/mpeg": [".mp3"],
+        "audio/ogg": [".ogg"],
+        "audio/flac": [".flac"],
+        "audio/aiff": [".aif", ".aiff"]
+      },
+      "launch_type": "single-client"
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "audio",
+          "accept": ["audio/*", ".mid", ".midi", ".mmp", ".mmpz", ".AnkhWaveStudiow"]
+        }
+      ]
+    }
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+AnkhWaveStudio",
+      "url": "/protocol?uri=%s"
+    },
+    {
+      "protocol": "web+midi",
+      "url": "/import?midi=%s"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nouveau projet",
+      "short_name": "Nouveau",
+      "description": "Créer un nouveau projet musical",
+      "url": "/?action=new"
+    },
+    {
+      "name": "Projets récents",
+      "short_name": "Récents",
+      "description": "Ouvrir un projet récent",
+      "url": "/?action=recent"
+    },
+    {
+      "name": "Importer audio",
+      "short_name": "Importer",
+      "description": "Importer des fichiers audio",
+      "url": "/import"
+    },
+    {
+      "name": "Parcourir les samples",
+      "short_name": "Samples",
+      "description": "Parcourir la bibliothèque de samples",
+      "url": "/?panel=samples"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop-main.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Interface principale de AnkhWaveStudio Web avec piano roll et table de mixage"
+    },
+    {
+      "src": "/screenshots/desktop-instruments.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Rack d'instruments avec synthétiseurs et effets"
+    },
+    {
+      "src": "/screenshots/tablet-main.png",
+      "sizes": "1024x768",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "AnkhWaveStudio Web sur tablette"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "windows",
+      "url": "https://AnkhWaveStudio.io/download",
+      "id": "AnkhWaveStudio"
+    },
+    {
+      "platform": "macos",
+      "url": "https://AnkhWaveStudio.io/download",
+      "id": "AnkhWaveStudio"
+    },
+    {
+      "platform": "linux",
+      "url": "https://AnkhWaveStudio.io/download",
+      "id": "io.AnkhWaveStudio.AnkhWaveStudio"
+    },
+    {
+      "platform": "jemaos_play",
+      "url": "https://play.google.com/store/apps/details?id=io.AnkhWaveStudio.web",
+      "id": "io.AnkhWaveStudio.web"
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}

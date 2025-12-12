@@ -1,0 +1,730 @@
+{
+  "version": 1,
+  "generatedAt": "2025-12-12T14:05:09.345Z",
+  "files": [
+    {
+      "path": "/samples/basses/bass_acid01.ogg",
+      "size": 7286
+    },
+    {
+      "path": "/samples/basses/bass_acid02.ogg",
+      "size": 11949
+    },
+    {
+      "path": "/samples/basses/bass_hard01.ogg",
+      "size": 26471
+    },
+    {
+      "path": "/samples/basses/bass_hard02.ogg",
+      "size": 18490
+    },
+    {
+      "path": "/samples/basses/bass_punch01.ogg",
+      "size": 4836
+    },
+    {
+      "path": "/samples/basses/bass01.ogg",
+      "size": 4932
+    },
+    {
+      "path": "/samples/basses/horror_bass01.ogg",
+      "size": 6439
+    },
+    {
+      "path": "/samples/basses/matrix1000_pluck01.ogg",
+      "size": 13616
+    },
+    {
+      "path": "/samples/basses/rave_bass01.ogg",
+      "size": 6219
+    },
+    {
+      "path": "/samples/basses/rave_bass02.ogg",
+      "size": 7785
+    },
+    {
+      "path": "/samples/basses/rave_bass03.ogg",
+      "size": 5695
+    },
+    {
+      "path": "/samples/basses/rave_bass04.ogg",
+      "size": 5873
+    },
+    {
+      "path": "/samples/basses/synth_acid01.ogg",
+      "size": 7528
+    },
+    {
+      "path": "/samples/basses/synth_acid02.ogg",
+      "size": 7467
+    },
+    {
+      "path": "/samples/basses/techno_synth01.ogg",
+      "size": 6284
+    },
+    {
+      "path": "/samples/bassloops/briff01 - 140 BPM.ogg",
+      "size": 27680
+    },
+    {
+      "path": "/samples/bassloops/rave_bass01 - 180 BPM.ogg",
+      "size": 21728
+    },
+    {
+      "path": "/samples/bassloops/rave_bass02 - 180 BPM.ogg",
+      "size": 19940
+    },
+    {
+      "path": "/samples/bassloops/tb303_01 - 123 BPM.ogg",
+      "size": 57575
+    },
+    {
+      "path": "/samples/bassloops/techno_bass01 - 140 BPM.ogg",
+      "size": 12550
+    },
+    {
+      "path": "/samples/bassloops/techno_bass02 - 140 BPM.ogg",
+      "size": 14297
+    },
+    {
+      "path": "/samples/bassloops/techno_synth01 - 140 BPM.ogg",
+      "size": 57911
+    },
+    {
+      "path": "/samples/bassloops/techno_synth02 - 140 BPM.ogg",
+      "size": 79117
+    },
+    {
+      "path": "/samples/bassloops/techno_synth03 - 130 BPM.ogg",
+      "size": 58164
+    },
+    {
+      "path": "/samples/bassloops/techno_synth04 - 140 BPM.ogg",
+      "size": 68158
+    },
+    {
+      "path": "/samples/beats/909beat01 - 122 BPM.ogg",
+      "size": 36760
+    },
+    {
+      "path": "/samples/beats/break01 - 168 BPM.ogg",
+      "size": 18560
+    },
+    {
+      "path": "/samples/beats/break02 - 141 BPM.ogg",
+      "size": 23360
+    },
+    {
+      "path": "/samples/beats/break03 - 168 BPM.ogg",
+      "size": 20595
+    },
+    {
+      "path": "/samples/beats/electro_beat01 - 120 BPM.ogg",
+      "size": 45036
+    },
+    {
+      "path": "/samples/beats/electro_beat02 - 119 BPM.ogg",
+      "size": 19694
+    },
+    {
+      "path": "/samples/beats/house_loop01 - 142 BPM.ogg",
+      "size": 21413
+    },
+    {
+      "path": "/samples/beats/jungle01 - 168 BPM.ogg",
+      "size": 33787
+    },
+    {
+      "path": "/samples/beats/rave_hihat01 - 180 BPM.ogg",
+      "size": 23420
+    },
+    {
+      "path": "/samples/beats/rave_hihat02 - 180 BPM.ogg",
+      "size": 21067
+    },
+    {
+      "path": "/samples/beats/rave_kick01 - 180 BPM.ogg",
+      "size": 21611
+    },
+    {
+      "path": "/samples/beats/rave_kick02 - 180 BPM.ogg",
+      "size": 19364
+    },
+    {
+      "path": "/samples/beats/rave_snare01 - 180 BPM.ogg",
+      "size": 20970
+    },
+    {
+      "path": "/samples/drums/bassdrum_acoustic01.ogg",
+      "size": 4907
+    },
+    {
+      "path": "/samples/drums/bassdrum_acoustic02.ogg",
+      "size": 15836
+    },
+    {
+      "path": "/samples/drums/bassdrum01.ogg",
+      "size": 9922
+    },
+    {
+      "path": "/samples/drums/bassdrum02.ogg",
+      "size": 7038
+    },
+    {
+      "path": "/samples/drums/bassdrum03.ogg",
+      "size": 6698
+    },
+    {
+      "path": "/samples/drums/bassdrum04.ogg",
+      "size": 6978
+    },
+    {
+      "path": "/samples/drums/clap01.ogg",
+      "size": 8420
+    },
+    {
+      "path": "/samples/drums/clap02.ogg",
+      "size": 5991
+    },
+    {
+      "path": "/samples/drums/clap03.ogg",
+      "size": 5734
+    },
+    {
+      "path": "/samples/drums/clap04.ogg",
+      "size": 7692
+    },
+    {
+      "path": "/samples/drums/clav01.ogg",
+      "size": 3919
+    },
+    {
+      "path": "/samples/drums/clav02.ogg",
+      "size": 5317
+    },
+    {
+      "path": "/samples/drums/crash01.ogg",
+      "size": 18742
+    },
+    {
+      "path": "/samples/drums/crash02.ogg",
+      "size": 20253
+    },
+    {
+      "path": "/samples/drums/hihat_closed01.ogg",
+      "size": 5497
+    },
+    {
+      "path": "/samples/drums/hihat_closed02.ogg",
+      "size": 4633
+    },
+    {
+      "path": "/samples/drums/hihat_closed03.ogg",
+      "size": 5036
+    },
+    {
+      "path": "/samples/drums/hihat_closed04.ogg",
+      "size": 4616
+    },
+    {
+      "path": "/samples/drums/hihat_closed05.ogg",
+      "size": 4464
+    },
+    {
+      "path": "/samples/drums/hihat_foot_pedal01.ogg",
+      "size": 6988
+    },
+    {
+      "path": "/samples/drums/hihat_opened01.ogg",
+      "size": 8069
+    },
+    {
+      "path": "/samples/drums/hihat_opened02.ogg",
+      "size": 9376
+    },
+    {
+      "path": "/samples/drums/hihat_opened03.ogg",
+      "size": 8506
+    },
+    {
+      "path": "/samples/drums/kick_distorted01.ogg",
+      "size": 7985
+    },
+    {
+      "path": "/samples/drums/kick_hard01.ogg",
+      "size": 6660
+    },
+    {
+      "path": "/samples/drums/kick_hardcore01.ogg",
+      "size": 9279
+    },
+    {
+      "path": "/samples/drums/kick_hiphop01.ogg",
+      "size": 5240
+    },
+    {
+      "path": "/samples/drums/kick_long01.ogg",
+      "size": 7961
+    },
+    {
+      "path": "/samples/drums/kick_soft01.ogg",
+      "size": 23944
+    },
+    {
+      "path": "/samples/drums/kick_soft02.ogg",
+      "size": 7390
+    },
+    {
+      "path": "/samples/drums/kick01.ogg",
+      "size": 3992
+    },
+    {
+      "path": "/samples/drums/kick02.ogg",
+      "size": 16068
+    },
+    {
+      "path": "/samples/drums/kick03.ogg",
+      "size": 5025
+    },
+    {
+      "path": "/samples/drums/kick04.ogg",
+      "size": 12017
+    },
+    {
+      "path": "/samples/drums/nasty_bass01.ogg",
+      "size": 6033
+    },
+    {
+      "path": "/samples/drums/nasty_rim01.ogg",
+      "size": 8627
+    },
+    {
+      "path": "/samples/drums/nasty_snare01.ogg",
+      "size": 7101
+    },
+    {
+      "path": "/samples/drums/ride01.ogg",
+      "size": 16661
+    },
+    {
+      "path": "/samples/drums/ride02.ogg",
+      "size": 6471
+    },
+    {
+      "path": "/samples/drums/rim01.ogg",
+      "size": 7199
+    },
+    {
+      "path": "/samples/drums/shaker01.ogg",
+      "size": 5070
+    },
+    {
+      "path": "/samples/drums/shaker02.ogg",
+      "size": 5550
+    },
+    {
+      "path": "/samples/drums/shaker03.ogg",
+      "size": 5378
+    },
+    {
+      "path": "/samples/drums/sidestick01.ogg",
+      "size": 4754
+    },
+    {
+      "path": "/samples/drums/snare_acoustic01.ogg",
+      "size": 5942
+    },
+    {
+      "path": "/samples/drums/snare_electro01.ogg",
+      "size": 20538
+    },
+    {
+      "path": "/samples/drums/snare_harsh01.ogg",
+      "size": 11427
+    },
+    {
+      "path": "/samples/drums/snare_hiphop01.ogg",
+      "size": 4808
+    },
+    {
+      "path": "/samples/drums/snare_hiphop02.ogg",
+      "size": 4530
+    },
+    {
+      "path": "/samples/drums/snare_muffled01.ogg",
+      "size": 6439
+    },
+    {
+      "path": "/samples/drums/snare_muffled02.ogg",
+      "size": 5097
+    },
+    {
+      "path": "/samples/drums/snare_rim01.ogg",
+      "size": 4735
+    },
+    {
+      "path": "/samples/drums/snare_short01.ogg",
+      "size": 4566
+    },
+    {
+      "path": "/samples/drums/snare01.ogg",
+      "size": 7215
+    },
+    {
+      "path": "/samples/drums/snare02.ogg",
+      "size": 5669
+    },
+    {
+      "path": "/samples/drums/snare03.ogg",
+      "size": 8137
+    },
+    {
+      "path": "/samples/drums/snare04.ogg",
+      "size": 9088
+    },
+    {
+      "path": "/samples/drums/snare05.ogg",
+      "size": 9484
+    },
+    {
+      "path": "/samples/drums/snare06.ogg",
+      "size": 6184
+    },
+    {
+      "path": "/samples/drums/snare07.ogg",
+      "size": 7850
+    },
+    {
+      "path": "/samples/drums/tom_hi01.ogg",
+      "size": 6755
+    },
+    {
+      "path": "/samples/drums/tom_low01.ogg",
+      "size": 7393
+    },
+    {
+      "path": "/samples/drums/tom_mid01.ogg",
+      "size": 7059
+    },
+    {
+      "path": "/samples/drums/tom01.ogg",
+      "size": 10572
+    },
+    {
+      "path": "/samples/drums/tom02.ogg",
+      "size": 5475
+    },
+    {
+      "path": "/samples/drums/tom03.ogg",
+      "size": 10687
+    },
+    {
+      "path": "/samples/drums/tom04.ogg",
+      "size": 10480
+    },
+    {
+      "path": "/samples/drums/tom05.ogg",
+      "size": 9132
+    },
+    {
+      "path": "/samples/drums/wood01.ogg",
+      "size": 4523
+    },
+    {
+      "path": "/samples/drums/zap01.ogg",
+      "size": 4338
+    },
+    {
+      "path": "/samples/drums/zap02.ogg",
+      "size": 4554
+    },
+    {
+      "path": "/samples/drums/zap03.ogg",
+      "size": 4586
+    },
+    {
+      "path": "/samples/effects/chroma_sound_effect01.ogg",
+      "size": 18252
+    },
+    {
+      "path": "/samples/effects/explode01.ogg",
+      "size": 22946
+    },
+    {
+      "path": "/samples/effects/filter_sweep01.ogg",
+      "size": 31544
+    },
+    {
+      "path": "/samples/effects/scratch01.ogg",
+      "size": 12370
+    },
+    {
+      "path": "/samples/effects/start01.ogg",
+      "size": 61097
+    },
+    {
+      "path": "/samples/effects/start02.ogg",
+      "size": 87292
+    },
+    {
+      "path": "/samples/effects/stop01.ogg",
+      "size": 10489
+    },
+    {
+      "path": "/samples/effects/warp01.ogg",
+      "size": 13391
+    },
+    {
+      "path": "/samples/effects/warp02.ogg",
+      "size": 39653
+    },
+    {
+      "path": "/samples/effects/wind_chimes01.ogg",
+      "size": 57873
+    },
+    {
+      "path": "/samples/instruments/bassslap01.ogg",
+      "size": 7294
+    },
+    {
+      "path": "/samples/instruments/bassslap02.ogg",
+      "size": 20461
+    },
+    {
+      "path": "/samples/instruments/cello01.ogg",
+      "size": 21151
+    },
+    {
+      "path": "/samples/instruments/church_organ01.ogg",
+      "size": 86312
+    },
+    {
+      "path": "/samples/instruments/church_organ02.ogg",
+      "size": 72994
+    },
+    {
+      "path": "/samples/instruments/church_organ03.ogg",
+      "size": 50652
+    },
+    {
+      "path": "/samples/instruments/church_organ04.ogg",
+      "size": 66305
+    },
+    {
+      "path": "/samples/instruments/e_organ01.ogg",
+      "size": 70876
+    },
+    {
+      "path": "/samples/instruments/e_piano_accord01.ogg",
+      "size": 32804
+    },
+    {
+      "path": "/samples/instruments/e_piano_accord02.ogg",
+      "size": 59978
+    },
+    {
+      "path": "/samples/instruments/flute01.ogg",
+      "size": 94969
+    },
+    {
+      "path": "/samples/instruments/harpsichord01.ogg",
+      "size": 60978
+    },
+    {
+      "path": "/samples/instruments/piano01.ogg",
+      "size": 12986
+    },
+    {
+      "path": "/samples/instruments/piano02.ogg",
+      "size": 90642
+    },
+    {
+      "path": "/samples/instruments/steel_guitar_heavy_distorted01.ogg",
+      "size": 47917
+    },
+    {
+      "path": "/samples/instruments/steel_guitar_medium_distorted01.ogg",
+      "size": 47682
+    },
+    {
+      "path": "/samples/instruments/steel_guitar_slight_distorted01.ogg",
+      "size": 47309
+    },
+    {
+      "path": "/samples/instruments/steel_guitar01.ogg",
+      "size": 49554
+    },
+    {
+      "path": "/samples/instruments/trumpet01.ogg",
+      "size": 33029
+    },
+    {
+      "path": "/samples/instruments/violin_double_stop01.ogg",
+      "size": 13419
+    },
+    {
+      "path": "/samples/instruments/violin_fingered01.ogg",
+      "size": 19301
+    },
+    {
+      "path": "/samples/instruments/violin_pizzicato01.ogg",
+      "size": 5768
+    },
+    {
+      "path": "/samples/latin/latin_brass01 - 140 BPM.ogg",
+      "size": 22412
+    },
+    {
+      "path": "/samples/latin/latin_guitar01 - 126 BPM.ogg",
+      "size": 43846
+    },
+    {
+      "path": "/samples/latin/latin_guitar02 - 140 BPM.ogg",
+      "size": 64750
+    },
+    {
+      "path": "/samples/latin/latin_guitar03 - 120 BPM.ogg",
+      "size": 135028
+    },
+    {
+      "path": "/samples/misc/applause01.ogg",
+      "size": 26313
+    },
+    {
+      "path": "/samples/misc/bass!.ogg",
+      "size": 7541
+    },
+    {
+      "path": "/samples/misc/breath01.ogg",
+      "size": 46433
+    },
+    {
+      "path": "/samples/misc/buzz!.ogg",
+      "size": 6500
+    },
+    {
+      "path": "/samples/misc/dong01.ogg",
+      "size": 17967
+    },
+    {
+      "path": "/samples/misc/dong02.ogg",
+      "size": 13549
+    },
+    {
+      "path": "/samples/misc/dong03.ogg",
+      "size": 10566
+    },
+    {
+      "path": "/samples/misc/electric_ping01.ogg",
+      "size": 5352
+    },
+    {
+      "path": "/samples/misc/hit01.ogg",
+      "size": 43603
+    },
+    {
+      "path": "/samples/misc/hit02.ogg",
+      "size": 8941
+    },
+    {
+      "path": "/samples/misc/metalish_dong01.ogg",
+      "size": 7383
+    },
+    {
+      "path": "/samples/misc/metronome01.ogg",
+      "size": 6523
+    },
+    {
+      "path": "/samples/misc/metronome02.ogg",
+      "size": 5834
+    },
+    {
+      "path": "/samples/misc/raving_crowd01.ogg",
+      "size": 65646
+    },
+    {
+      "path": "/samples/misc/snaph01.ogg",
+      "size": 4807
+    },
+    {
+      "path": "/samples/misc/undefined01.ogg",
+      "size": 7260
+    },
+    {
+      "path": "/samples/shapes/roundsaw.ogg",
+      "size": 7450
+    },
+    {
+      "path": "/samples/shapes/sine_dist.ogg",
+      "size": 17721
+    },
+    {
+      "path": "/samples/shapes/smooth_inv_saw_dist.ogg",
+      "size": 17157
+    },
+    {
+      "path": "/samples/shapes/smooth_inv_saw.ogg",
+      "size": 15910
+    },
+    {
+      "path": "/samples/shapes/smooth_inv_saw2.ogg",
+      "size": 16465
+    },
+    {
+      "path": "/samples/stringsnpads/bell_choir01.ogg",
+      "size": 93490
+    },
+    {
+      "path": "/samples/stringsnpads/bell_choir02.ogg",
+      "size": 69831
+    },
+    {
+      "path": "/samples/stringsnpads/chorus01.ogg",
+      "size": 19298
+    },
+    {
+      "path": "/samples/stringsnpads/chorus02.ogg",
+      "size": 126411
+    },
+    {
+      "path": "/samples/stringsnpads/heaven_strings01.ogg",
+      "size": 29295
+    },
+    {
+      "path": "/samples/stringsnpads/juno_pad01.ogg",
+      "size": 45934
+    },
+    {
+      "path": "/samples/stringsnpads/korg_poly6_drone01.ogg",
+      "size": 18516
+    },
+    {
+      "path": "/samples/stringsnpads/nord_ambient01.ogg",
+      "size": 56924
+    },
+    {
+      "path": "/samples/stringsnpads/orion_string01.ogg",
+      "size": 10615
+    },
+    {
+      "path": "/samples/stringsnpads/rave_choir01.ogg",
+      "size": 8730
+    },
+    {
+      "path": "/samples/stringsnpads/space_strings01.ogg",
+      "size": 50322
+    },
+    {
+      "path": "/samples/stringsnpads/space_strings02.ogg",
+      "size": 53995
+    },
+    {
+      "path": "/samples/stringsnpads/space_strings03.ogg",
+      "size": 48148
+    },
+    {
+      "path": "/samples/stringsnpads/strings01.ogg",
+      "size": 86022
+    }
+  ]
+}
