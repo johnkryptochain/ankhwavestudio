@@ -11,7 +11,7 @@ Construite avec les dernières technologies web (React, Vite, TypeScript), AnkhW
 *   **Moteur Audio Haute Performance** : Traitement audio en temps réel avec une latence minimale.
 *   **Outils de Composition Complets** : Séquenceur pas à pas, Piano Roll avancé et éditeur d'arrangement.
 *   **Rack d'Instruments et Effets** : Synthétiseurs intégrés, échantillonneurs et une suite d'effets audio professionnels.
-*   **Optimisation JemaOS** : Conçu spécifiquement pour tirer le meilleur parti de l'écosystème JemaOS et des Chromebooks.
+*   **Optimisation JemaOS** : Conçu spécifiquement pour tirer le meilleur parti de l'écosystème JemaOS.
 *   **Architecture Moderne** : Codebase propre et modulaire facilitant l'évolution et la maintenance.
 
 ## Installation et Développement
